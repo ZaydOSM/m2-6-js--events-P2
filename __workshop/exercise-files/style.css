@@ -1,1 +1,103 @@
 /* add css here */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Jost";
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+.wrapper {
+    margin:  32px auto;
+    max-width: 475px;
+    padding: 24px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+    height: 500px;
+}
+
+h1 {
+    text-align: center;
+    font-size: xxx-large;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.element {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.label {
+    float: left;
+    clear: left;
+    margin: 7px;
+    text-align: right;
+    width: 40%;
+    font-weight: 600;
+}
+
+.input {
+    outline:none;
+    float: right;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.terms {
+    background-color: #f2f2f2;
+    float: right;
+    width: 100%;
+    padding: 10px 23%;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 50px;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+}
+
+#submit {
+    background-color: hsl(256deg, 100%, 44%);
+    float: right;
+}
+
+#clear {
+    background-color: hsl(333deg, 100%, 44%);
+}
+
+.error {
+    display: none;
+    background-color: hsla(333deg, 100%, 44%, 0.25);
+    float: right;
+    width: 100%;
+    padding: 10px 10px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-bottom: 20px;
+} 
+
+.errorMessage {
+    margin-top: 5px;
+}
+
+.input:focus {
+    box-shadow: 0 0 0 2px blue;
+}

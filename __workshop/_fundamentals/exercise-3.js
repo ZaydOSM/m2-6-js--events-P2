@@ -19,6 +19,13 @@ const people = [
 
 function fullName(peopleArr) {
   // return something
+  return peopleArr.map(i => {
+    if (typeof(i.name.middle) !== 'undefined') {
+      return i.name.first + ' ' + i.name.middle + ' ' + i.name.last;
+    } else {
+      return i.name.first + ' ' + i.name.last;
+    }
+  });
 }
 
 // 2. Do a console.log to verify your function.

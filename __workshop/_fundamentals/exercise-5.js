@@ -87,6 +87,15 @@ const staffMembers = [
 
 const getData = (arr, key, val) => {
   // return something
+  if ( key === 'javascript') {
+    return arr.filter(i => i.skillLevels.javascript > val);
+  } else if ( key === 'python') {
+      return arr.filter(i => i.skillLevels.python > val);
+  } else if ( key === 'sql') {
+      return arr.filter(i => i.skillLevels.sql > val);
+  } else if ( key === 'title') {
+    return arr.filter(i => i.title === val);
+  } 
 };
 
 // 2. Do a console.log to verify your function.

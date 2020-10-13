@@ -5,10 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
+    <link href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap" rel="stylesheet"/>
     <title>Signup Form</title>
   </head>
   <body>
+    <div>
+      <div class="wrapper">
+        <h1>Signup Form</h1>
+        <form onsubmit="return false">
+          <div class="element">
+            <label class="label" for="fname">Full name:</label>
+            <input class="input" id ="fname" type="text" autocomplete="name" required>
+          </div>
+          <div class="element">
+            <label class="label" for="street">Street address</label>
+            <input class="input" id ="street" type="text" autocomplete="street-address" required>
+          </div>
+          <div class="element">
+            <label class="label" for="email">Email address</label>
+            <input class="input" id ="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="element">
+            <label class="label" for="phone">Phone number</label>
+            <input class="input" id ="phone" type="tel" autocomplete="tel" required>
+          </div>
+          <div class="element">
+            <label class="label" for="password">Password</label>
+            <input class="input" id ="password" type="password" required>
+          </div>
+          <div class="element">
+            <label class="label" for="confirm">Confirm Password</label>
+            <input class="input" id ="confirm" type="password" required>
+          </div>
+          <div class="terms">
+            <input id ="terms" type="checkbox">
+            <label class="termla" for="terms">I agree to the <a href="#">terms of service</a></label>
+          </div>
+            <p class="error">cc</p>
+          <footer>
+            <button id="clear" onclick="form.reset()">Clear</button>
+            <button id="submit" onclick="submitting()">Submit</button>
+          </footer>
+        </form>
+        
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
